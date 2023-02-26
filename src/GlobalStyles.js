@@ -1,0 +1,32 @@
+const { createGlobalStyle } = require("styled-components");
+
+export const GlobalStyle = createGlobalStyle`
+  html {
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+  *, ::after, ::before {
+    box-sizing: inherit;
+  }
+
+  #root {
+    font-family: 'Inter', sans-serif;
+    background-color: #E5E5E5;
+    letter-spacing: 0.05em;
+    display: flex;
+    justify-content: center;
+  }
+
+  h1 {
+    font-size: 38px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+`;
