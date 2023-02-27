@@ -16,7 +16,7 @@ const Portfolio = () => {
     <Wrapper>
       
       
-      <Sub />  
+      {repoStatus} 
     
     </Wrapper>
 
