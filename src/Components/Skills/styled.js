@@ -1,8 +1,6 @@
 import styled from "styled-components";
 import { firstColumn, secondColumn, thirdColumn, } from "../../skills";
 
-
-
 export const StyledUl = styled.ul`
   padding: 0;
   margin-top: 0;
@@ -33,4 +31,3 @@ export const StyledLi = styled.li`
   margin-right: 5px;
   
 `;
-

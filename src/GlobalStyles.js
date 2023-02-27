@@ -16,6 +16,7 @@ export const GlobalStyle = createGlobalStyle`
     letter-spacing: 0.05em;
     display: flex;
     justify-content: center;
+    word-break: break-all;
   }
 
   h1 {
