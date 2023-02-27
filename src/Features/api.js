@@ -1,0 +1,5 @@
+import axios from "axios";
+
+export const getRepo = () => 
+  axios.get("https://api.github.com/users/KubaTuta/repos")
+  .then(response => response.data)
