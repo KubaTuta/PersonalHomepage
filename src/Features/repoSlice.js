@@ -11,8 +11,8 @@ const repoSlice = createSlice({
       repositories: null,
       status: "loading",
 }),
-    fetchRepositoriesSuccess: ({payload: repositories}) => ({
-      repositories: repositories,
+    fetchRepositoriesSuccess: (_, {payload: repositories}) => ({
+      repositories,
       status: "success",
     }),
     fetchRepositoriesError: () => ({

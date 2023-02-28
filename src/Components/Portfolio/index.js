@@ -17,7 +17,7 @@ const Portfolio = () => {
       
       
       {repoStatus} 
-    
+    {repositories ? repositories[0].id : null}
     </Wrapper>
 
   )
