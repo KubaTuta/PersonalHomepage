@@ -1,5 +1,6 @@
 {
   "name": "personal-homepage",
+  "homepage": "https://kubatuta.github.io/PersonalHomepage/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
