@@ -17,4 +17,12 @@ export const StyledHeader = styled.header`
   
   border-bottom: 1px solid #E5E5E5;
   margin: 32px;
-  `
+`;
+
+export const Footer = styled.div`
+
+`;
+
+export const Svg = styled.img`
+  margin-right: 24px;
+`;

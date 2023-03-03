@@ -4,11 +4,9 @@ import { firstColumnToLearn, secondColumnToLearn, thirdColumnToLearn } from "../
 export const StyledUl = styled.ul`
   padding: 0;
   margin-top: 0;
-  margin-left: 32px;
+  margin-left: -16px;
   color: #6E7E91;
-  li::marker {
-    color: #0366D6;
-  }
+
   display: grid;
   grid-auto-flow: column;
   grid-template-columns: repeat(3, 1fr);
@@ -27,7 +25,12 @@ export const StyledLi = styled.li`
   padding-top: 5px;
   font-size: 18px;
   line-height: 140%;
-  margin-left: -10px;
-  margin-right: 5px;
-  
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+`;
+
+export const Img = styled.img`
+  margin-left: 16px;
+  margin-right: 16px;
 `;

@@ -9,4 +9,5 @@ export const Image = styled.img`
 export const GridWrapper = styled.div`
   display: grid;
   grid-template-columns: auto 1fr;
+  gap: 66px;
 `;

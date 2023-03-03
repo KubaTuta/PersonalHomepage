@@ -1,6 +1,7 @@
 import { skillsToLearn } from "../../skills";
 import { ListWrapper } from "../../styled";
-import { StyledLi, StyledUl } from "./styled";
+import { Img, StyledLi, StyledUl } from "./styled";
+import circle from "../svg/circle.svg";
 
 const WantToLearn = () => (
   <ListWrapper>
@@ -8,7 +9,7 @@ const WantToLearn = () => (
       <StyledUl>
         {skillsToLearn.map(({ skill, id }) => (
           <StyledLi key={id}>
-            {skill}
+            <Img src={circle} alt="point"></Img>{skill}
           </StyledLi>
         )
 

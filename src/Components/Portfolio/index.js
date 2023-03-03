@@ -1,17 +1,22 @@
 
 import Github from "./Github";
-import { GridWrapper } from "./styled";
+import { Description, GridWrapper, H2, Heading, Img } from "./styled";
+import github from "../svg/github.svg";
 
 const Portfolio = () => {
 
   return (
-    <div>
-    <p>Portfolio</p>
-    <GridWrapper>
-      <Github />
-    </GridWrapper>
-    
-  </div>
+    <>
+    <Heading>
+      <Img src={github} alt="github icon"></Img>
+      <H2>Portfolio</H2>
+      <Description>My recent projects</Description>
+    </Heading>
+      
+      <GridWrapper>
+        <Github />
+      </GridWrapper>
+    </>
   )
 };
 
