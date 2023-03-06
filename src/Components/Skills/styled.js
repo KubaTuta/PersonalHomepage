@@ -5,7 +5,7 @@ export const StyledUl = styled.ul`
   padding: 0;
   margin-top: 0;
   margin-left: -16px;
-  color: #6E7E91;
+  color: ${({theme})=>theme.color.slateGray};
   display: grid;
   grid-auto-flow: column;
   grid-template-columns: repeat(3, 1fr);

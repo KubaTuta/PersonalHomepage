@@ -2,6 +2,6 @@ import styled from "styled-components";
 
 
 export const ListWrapper = styled.div`
-  background-color: #ffffff;
+  background-color: ${({theme})=>theme.color.background};;
 `;
 

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Heading = styled.p`
   font-size: 12px;
-  color: #6E7E91;
+  color: ${({theme})=>theme.color.slateGray};
 `;
 
 export const Email = styled.p`

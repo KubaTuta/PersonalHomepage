@@ -12,7 +12,7 @@ export const GlobalStyle = createGlobalStyle`
 
   #root {
     font-family: 'Inter', sans-serif;
-    background-color: #E5E5E5;
+    background-color: ${({theme})=>theme.color.background};
     letter-spacing: 0.05em;
     line-height: 1.4;
     display: flex;
