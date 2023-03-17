@@ -1,22 +1,37 @@
 import styled from "styled-components";
-import { firstColumn, secondColumn, thirdColumn, } from "../../skills";
+import { firstColumn, firstOfTwo, secondColumn, thirdColumn, } from "../../skills";
 
 export const StyledUl = styled.ul`
   padding: 0;
   margin-top: 0;
   margin-left: -16px;
-  color: ${({theme})=>theme.color.slateGray};
+  color: ${({ theme }) => theme.color.smallText};
   display: grid;
   grid-auto-flow: column;
   grid-template-columns: repeat(3, 1fr);
   & > :nth-child(-n+${firstColumn}) {
     grid-column: 1;
-  }
+  };
   & > :nth-child(n+${secondColumn}) {
     grid-column: 2;
-  }
+  };
   & > :nth-child(n+${thirdColumn}) {
     grid-column: 3;
+  };
+
+  @media(max-width: ${({ theme }) => theme.breakpoint.medium}) {
+    grid-template-columns: repeat(2, 1fr);
+    & > :nth-child(-n+${firstOfTwo}) {
+    grid-column: 1;
+    };
+    & > :nth-child(n+${thirdColumn}) {
+    grid-column: unset;
+    };
+  }
+
+  @media(max-width: ${({ theme }) => theme.breakpoint.small}) {
+    display: flex;
+    flex-direction: column;
   }
 `;
 

@@ -1,11 +1,11 @@
 import styled from "styled-components";
-import { firstColumnToLearn, secondColumnToLearn, thirdColumnToLearn } from "../../skills";
+import { firstColumnToLearn, firstOfTwoToLearn, secondColumnToLearn, thirdColumnToLearn } from "../../skills";
 
 export const StyledUl = styled.ul`
   padding: 0;
   margin-top: 0;
   margin-left: -16px;
-  color: ${({theme})=>theme.color.slateGray};
+  color: ${({theme})=>theme.color.smallText};
 
   display: grid;
   grid-auto-flow: column;
@@ -18,6 +18,21 @@ export const StyledUl = styled.ul`
   }
   & > :nth-child(n+${thirdColumnToLearn}) {
     grid-column: 3;
+  }
+  
+  @media(max-width: ${({ theme }) => theme.breakpoint.medium}) {
+    grid-template-columns: repeat(2, 1fr);
+    & > :nth-child(-n+${firstOfTwoToLearn}) {
+    grid-column: 1;
+    };
+    & > :nth-child(n+${thirdColumnToLearn}) {
+    grid-column: unset;
+    };
+  }
+
+  @media(max-width: ${({ theme }) => theme.breakpoint.small}) {
+    display: flex;
+    flex-direction: column;
   }
 `;
 
