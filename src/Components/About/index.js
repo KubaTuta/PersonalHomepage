@@ -1,18 +1,16 @@
-import { GridWrapper } from "./styled";
+import { GridWrapper, Image } from "./styled";
 import face from "./face.jpg";
-import { Image } from "./styled";
+import { ThemeSwitcher } from "./ThemeSwitcher";
 
 const About = () => (
   <GridWrapper>
+    <Image src={face} alt="Kuba"></Image>
     <div>
-      <Image src={face} alt="Kuba"></Image>
+      <ThemeSwitcher />
+      <p>THIS IS</p>
+      <h1>Kuba Tuta</h1>
+      <p>jakiś tekst o mnie</p>
     </div>
-    <div> 
-    <p>THIS IS</p>
-    <h1>Kuba Tuta</h1>
-    <p>jakiś tekst o mnie</p>
-    </div>
-    
   </GridWrapper>
 );
 
