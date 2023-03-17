@@ -48,6 +48,7 @@ export const skills = [
     skill: "12 homepage"
   },
 ];
+
 export const skillsToLearn = [
   {
     id: 1,
@@ -66,12 +67,15 @@ export const skillsToLearn = [
     skill: "Others"
   },
 ];
+
 const skillLength = Object.keys(skills).length;
 export const firstColumn = Math.ceil(skillLength / 3) ;
 export const secondColumn = firstColumn + 1;
 export const thirdColumn = skillLength - (Math.floor(skillLength/3) - 1);
+export const firstOfTwo = Math.ceil(skillLength / 2) ;
 
 const skillsLengthToLearn = Object.keys(skillsToLearn).length ;
 export const firstColumnToLearn = Math.ceil(skillsLengthToLearn / 3) ;
 export const secondColumnToLearn = firstColumnToLearn + 1;
 export const thirdColumnToLearn = skillsLengthToLearn - (Math.floor(skillsLengthToLearn/3) - 1);
+export const firstOfTwoToLearn = Math.ceil(skillsLengthToLearn / 2) ;
