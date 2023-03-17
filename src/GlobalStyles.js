@@ -4,6 +4,8 @@ export const GlobalStyle = createGlobalStyle`
   html {
     box-sizing: border-box;
     margin: 0;
+    color: ${({theme})=>theme.color.text};
+    background-color: ${({theme})=>theme.color.background};
   }
 
   *, ::after, ::before {
@@ -12,11 +14,9 @@ export const GlobalStyle = createGlobalStyle`
 
   #root {
     font-family: 'Inter', sans-serif;
-    background-color: ${({theme})=>theme.color.background};
     letter-spacing: 0.05em;
     line-height: 1.4;
-    display: flex;
-    justify-content: center;
+    margin: 10px;
     word-break: break-all;
   }
 
