@@ -6,19 +6,14 @@ import circle from "../svg/circle.svg";
 const Skills = () => {
   return (
     <ListWrapper>
-      
       <StyledUl>
         {skills.map(({ skill, id }) => (
           <StyledLi key={id}>
-           <Img src={circle} alt="point"></Img> {skill}
+            <Img src={circle} alt="point"></Img> {skill}
           </StyledLi>
-        )
-
-        )}
+        ))}
       </StyledUl>
-      
     </ListWrapper>
-
   )
 };
 

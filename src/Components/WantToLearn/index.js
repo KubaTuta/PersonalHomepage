@@ -5,19 +5,14 @@ import circle from "../svg/circle.svg";
 
 const WantToLearn = () => (
   <ListWrapper>
-      
-      <StyledUl>
-        {skillsToLearn.map(({ skill, id }) => (
-          <StyledLi key={id}>
-            <Img src={circle} alt="point"></Img>{skill}
-          </StyledLi>
-        )
-
-        )}
-      </StyledUl>
-      
-    </ListWrapper>
-  
+    <StyledUl>
+      {skillsToLearn.map(({ skill, id }) => (
+        <StyledLi key={id}>
+          <Img src={circle} alt="point"></Img>{skill}
+        </StyledLi>
+      ))}
+    </StyledUl>
+  </ListWrapper>
 );
 
 export default WantToLearn;

@@ -1,15 +1,15 @@
 import styled from "styled-components";
 
-export const GridWrapper = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 32px;
-`;
-
 export const Heading = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+`;
+
+export const GridWrapper = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 32px;
 `;
 
 export const Img = styled.img`
