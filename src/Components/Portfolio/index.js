@@ -1,13 +1,12 @@
 import Github from "./Github";
-import { Description, GridWrapper, H2, Heading, Img } from "./styled";
-import github from "../svg/github.svg";
+import { Description, GridWrapper, H2, Heading, GitSvg } from "./styled";
 
 const Portfolio = () => {
 
   return (
     <>
       <Heading>
-        <Img src={github} alt="github icon"></Img>
+        <GitSvg />
         <H2>Portfolio</H2>
         <Description>My recent projects</Description>
       </Heading>
