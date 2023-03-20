@@ -1,5 +1,4 @@
-import { StyledHeader } from "./styled";
-import { Wrapper } from "../../styled";
+import { StyledHeader, Wrapper } from "./styled";
 
 const Section = ({header, body}) => (
   <Wrapper>

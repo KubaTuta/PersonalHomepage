@@ -1,15 +1,15 @@
-import About from "./Components/About";
-import Skills from "./Components/Skills";
-import WantToLearn from "./Components/WantToLearn/index";
-import Portfolio from "./Components/Portfolio";
-import Contact from "./Components/Contact";
-import { Container } from "./styled";
-import Section from "./Common/Section/index";
 import { ThemeProvider } from "styled-components";
 import { useSelector } from "react-redux";
 import { selectDarkTheme } from "./Features/themeSlice";
 import { lightTheme, darkTheme } from "./themes";
 import { GlobalStyle } from "./GlobalStyles";
+import { Container } from "./styled";
+import { skills, skillsToLearn } from "./skills";
+import About from "./Components/About";
+import Section from "./Components/Common/Section/index";
+import Skillset from "./Components/Common/Skillset";
+import Portfolio from "./Components/Portfolio";
+import Contact from "./Components/Contact";
 
 function App() {
   const isDarkTheme = useSelector(selectDarkTheme);
@@ -19,12 +19,12 @@ function App() {
       <Container>
         <About />
         <Section
-          header={"My skillset includes "}
-          body={<Skills />}
+          header={"My skillset includes"}
+          body={<Skillset props={skills} />}
         />
         <Section
           header={"What I want to learn"}
-          body={<WantToLearn />}
+          body={<Skillset props={skillsToLearn} />}
         />
         <Portfolio />
         <Contact />

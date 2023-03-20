@@ -68,6 +68,8 @@ export const skillsToLearn = [
   },
 ];
 
+// column logic:
+
 const skillLength = Object.keys(skills).length;
 export const firstColumn = Math.ceil(skillLength / 3) ;
 export const secondColumn = firstColumn + 1;

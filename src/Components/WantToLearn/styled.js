@@ -6,7 +6,7 @@ export const StyledUl = styled.ul`
   margin-top: 0;
   margin-left: -16px;
   color: ${({theme})=>theme.color.smallText};
-
+  transition: 0.5s;
   display: grid;
   grid-auto-flow: column;
   grid-template-columns: repeat(3, 1fr);
@@ -34,6 +34,9 @@ export const StyledUl = styled.ul`
     display: flex;
     flex-direction: column;
   }
+  @media(max-width: ${({theme})=>theme.breakpoint.mobile}) {
+    
+  };
 `;
 
 export const StyledLi = styled.li`
@@ -43,6 +46,7 @@ export const StyledLi = styled.li`
   list-style-type: none;
   display: flex;
   align-items: center;
+  transition: 0.5s;
 `;
 
 export const Img = styled.img`
