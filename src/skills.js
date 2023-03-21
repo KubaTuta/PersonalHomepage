@@ -1,62 +1,66 @@
 export const skills = [
   {
     id: 1,
-    skill: "1React"
+    skill: "HTML"
   },
   {
     id: 2,
-    skill: "2Redux"
+    skill: "CSS"
   },
   {
     id: 3,
-    skill: "3Redux-saga"
+    skill: "JavaScript"
   },
   {
     id: 4,
-    skill: "4Styled-components"
+    skill: "React"
   },
   {
     id: 5,
-    skill: "5JavaScript"
+    skill: "Styled Components"
   },
   {
     id: 6,
-    skill: "6React"
+    skill: "Redux"
   },
   {
     id: 7,
-    skill: "7 node.js"
+    skill: "Redux-saga"
   },
   {
     id: 8,
-    skill: "8 praca zbiorowa"
+    skill: "Github"
   },
   {
     id: 9,
-    skill: "9 homepage"
+    skill: "Teamwork - Pull requests, merge"
   },
   {
     id: 10,
-    skill: "10 node.js"
+    skill: "Fetch"
   },
   {
     id: 11,
-    skill: "11 praca zbiorowa"
+    skill: "Async/Await"
   },
   {
     id: 12,
-    skill: "12 homepage"
+    skill: "Axios"
+  },
+  {
+    id: 13,
+    skill: "Redux-toolkit"
   },
 ];
 
 export const skillsToLearn = [
   {
     id: 1,
-    skill: "Node.js"
+    skill: "Typescript"
   },
   {
     id: 2,
-    skill: "backend"
+    skill: "Python"
   },
   {
     id: 3,
@@ -64,7 +68,15 @@ export const skillsToLearn = [
   },
   {
     id: 4,
-    skill: "Others"
+    skill: "SQL"
+  },
+  {
+    id: 5,
+    skill: "Material-UI"
+  },
+  {
+    id: 6,
+    skill: "More and more..."
   },
 ];
 
