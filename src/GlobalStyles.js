@@ -20,13 +20,5 @@ export const GlobalStyle = createGlobalStyle`
     font-family: 'Inter', sans-serif;
     letter-spacing: 0.05em;
     line-height: 1.4;
-    word-break: break-all;
-    
   }
-
-  h1 {
-    font-size: 38px;
-  }
-
-  
 `;
