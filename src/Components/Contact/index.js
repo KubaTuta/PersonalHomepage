@@ -11,17 +11,17 @@ const Contact = () => {
       <Heading>
         LET'S TALK!
       </Heading>
-      <Email>
+      <Email href="mailto:tuta.jakub@gmail.com"  rel="noopener noreferrer">
         tuta.jakub@gmail.com
       </Email>
       <Description>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique temporibus expedita voluptatibus distinctio tenetur debitis, itaque, voluptate mollitia libero eligendi placeat natus modi! Consequatur voluptatibus placeat dolor libero architecto quidem?
       </Description>
       <>
-        <SvgLink href="google.pl"><Github /></SvgLink>
-        <SvgLink href="google.pl"><Facebook /></SvgLink>
-        <SvgLink href="google.pl"><Instagram /></SvgLink>
-        <SvgLink href="google.pl"><Linked /></SvgLink>
+        <SvgLink href="https://google.pl" rel="noopener noreferrer"><Github /></SvgLink>
+        <SvgLink href="https://google.pl" rel="noopener noreferrer"><Facebook /></SvgLink>
+        <SvgLink href="https://google.pl" rel="noopener noreferrer"><Instagram /></SvgLink>
+        <SvgLink href="https://google.pl" rel="noopener noreferrer"><Linked /></SvgLink>
       </>
     </Footer>
 
