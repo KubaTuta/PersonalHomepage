@@ -12,22 +12,6 @@ export const Heading = styled.div`
     }
 `;
 
-export const GridWrapper = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 32px;
-
-  @media(max-width: ${({theme})=>theme.breakpoint.medium}) {
-    display: flex;
-    flex-direction: column;
-  }
-  @media(max-width: ${({theme})=>theme.breakpoint.mobile}) {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-  }
-`;
-
 export const GitSvg = styled(github)`
   margin: 12px;
   max-width: 40px;
@@ -35,10 +19,23 @@ export const GitSvg = styled(github)`
 
 export const H2 = styled.h2`
   margin: 0;
-
+  @media(max-width: ${({theme})=>theme.breakpoint.mobile}) {
+    font-size: 18px;
+  }
 `;
 
 export const Description = styled.p`
   font-size: 20px;
   margin: 8px;
+  text-align: center;
+  @media(max-width: ${({theme})=>theme.breakpoint.mobile}) {
+    font-size: 17px;
+  }
+`;
+
+export const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 90px;
 `;

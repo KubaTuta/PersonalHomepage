@@ -1,5 +1,5 @@
 import Github from "./Github";
-import { Description, GridWrapper, H2, Heading, GitSvg } from "./styled";
+import { Description, H2, Heading, GitSvg } from "./styled";
 
 const Portfolio = () => {
 
@@ -10,9 +10,7 @@ const Portfolio = () => {
         <H2>Portfolio</H2>
         <Description>My recent projects</Description>
       </Heading>
-      <GridWrapper>
-        <Github />
-      </GridWrapper>
+      <Github />
     </>
   )
 };
