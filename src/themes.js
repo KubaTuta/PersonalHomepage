@@ -6,19 +6,19 @@ export const lightTheme = {
     background: "#E5E5E5",
     smallText: "#6E7E91",
     scienceBlue: "#0366D6",
-    underline: "#0366d633",
+    linkUnderline: "#0366d633",
     border: "#0366d666",
     icon: "#252525",
     iconHover: "#2188FF",  
+    underline: "#E5E5E5",
     },
   breakpoint: 
     {
       full: "1216px",
       medium: "1050px",
       small: "767px",
-      mobile: "450px"
+      mobile: "520px"
     },
-
 }
 
 export const darkTheme = {
@@ -29,17 +29,17 @@ export const darkTheme = {
     background: "#252525",
     smallText: "#ffffff",
     scienceBlue: "#2188FF",
-    underline: "#0366d633",
+    linkUnderline: "#0366d633",
     border: "#0366d666",
     icon: "#ffffff",
     iconHover: "#2188FF",
+    underline: "#E5E5E5",
     },
   breakpoint: 
     {
       full: "1216px",
       medium: "1050px",
       small: "767px",
-      mobile: "450px"
+      mobile: "520px"
     },
-
 }
