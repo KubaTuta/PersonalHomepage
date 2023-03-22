@@ -1,5 +1,21 @@
 import styled from "styled-components";
 
+export const GridWrapper = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 32px;
+
+  @media(max-width: ${({theme})=>theme.breakpoint.medium}) {
+    display: flex;
+    flex-direction: column;
+  }
+  @media(max-width: ${({theme})=>theme.breakpoint.mobile}) {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+`;
+
 export const Tile = styled.div`
   background-color: ${({theme})=>theme.color.tile};
   padding: 56px;
@@ -16,7 +32,17 @@ export const Tile = styled.div`
   }
 `;
 
-export const ApiType = styled.div`
+export const H3 = styled.h3`
+  font-size: 24px;
+  margin-top: 0;
+  margin-bottom: 24px;
+  color: ${({theme})=>theme.color.scienceBlue};
+  @media(max-width: ${({theme})=>theme.breakpoint.mobile}) {
+    font-size: 16px;
+  };
+`;
+
+export const Text = styled.div`
   margin: 0;
   font-size: 18px;
   &:not(:last-child) {
@@ -33,18 +59,10 @@ export const ApiType = styled.div`
   };
 `;
 
-export const H3 = styled.h3`
-  font-size: 24px;
-  margin: 0;
-  color: ${({theme})=>theme.color.scienceBlue};
-  @media(max-width: ${({theme})=>theme.breakpoint.mobile}) {
-    font-size: 16px;
-  };
-`;
-
 export const Link = styled.a`
   color: ${({theme})=>theme.color.scienceBlue};
   text-decoration-color: ${({theme})=>theme.color.linkUnderline};
+  word-break: break-all;
   transition: 0.3s;
   &:hover {
     text-decoration-color: ${({theme})=>theme.color.scienceBlue};
