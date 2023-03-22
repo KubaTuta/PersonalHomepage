@@ -1,13 +1,24 @@
 {
   "files": {
-    "main.js": "/PersonalHomepage/static/js/main.d4d409ab.js",
+    "main.js": "/PersonalHomepage/static/js/main.c0950d61.js",
     "static/js/787.162bc9a0.chunk.js": "/PersonalHomepage/static/js/787.162bc9a0.chunk.js",
-    "static/media/face.jpg": "/PersonalHomepage/static/media/face.a231815b52dd80365291.jpg",
+    "static/media/face.jpg": "/PersonalHomepage/static/media/face.55c7675ddaae006eec41.jpg",
+    "static/media/ToggleOn.svg": "/PersonalHomepage/static/media/ToggleOn.a415d80930fe7ff812455f8d589fd27b.svg",
+    "static/media/ToggleOff.svg": "/PersonalHomepage/static/media/ToggleOff.c6db146fdfc78368d84b54e83fa1c512.svg",
+    "static/media/Instagram.svg": "/PersonalHomepage/static/media/Instagram.ac575dc2f80befa7ba993f0a04ba6dda.svg",
+    "static/media/github.svg": "/PersonalHomepage/static/media/github.20a7ab422c9dc38b316314959c5d95d2.svg",
+    "static/media/hire.svg": "/PersonalHomepage/static/media/hire.fd9c0ef0e404e62c30d038ab725fb57c.svg",
+    "static/media/git.svg": "/PersonalHomepage/static/media/git.a49c9555ab7efd63cbdbd38f559be5ce.svg",
     "index.html": "/PersonalHomepage/index.html",
-    "main.d4d409ab.js.map": "/PersonalHomepage/static/js/main.d4d409ab.js.map",
+    "static/media/Linked.svg": "/PersonalHomepage/static/media/Linked.2c26b104242a1c77c13c1498fc1cd787.svg",
+    "static/media/wrong.svg": "/PersonalHomepage/static/media/wrong.a713ca8752dc53fb52f84490e49aabe3.svg",
+    "static/media/Facebook.svg": "/PersonalHomepage/static/media/Facebook.14f43e9c25d473ecd49ceaf878f965b9.svg",
+    "static/media/spinner.svg": "/PersonalHomepage/static/media/spinner.88a075cf3a7f1af15999cb03bb3a0360.svg",
+    "static/media/circle.svg": "/PersonalHomepage/static/media/circle.82189c21d857261e180ba0a43d4dda67.svg",
+    "main.c0950d61.js.map": "/PersonalHomepage/static/js/main.c0950d61.js.map",
     "787.162bc9a0.chunk.js.map": "/PersonalHomepage/static/js/787.162bc9a0.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.d4d409ab.js"
+    "static/js/main.c0950d61.js"
   ]
 }
