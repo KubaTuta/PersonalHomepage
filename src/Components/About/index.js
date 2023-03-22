@@ -19,10 +19,9 @@ const About = () => (
         </Description>
         <Link href="mailto:tuta.jakub@gmail.com"><Border><Hire /></Border></Link>
       </ZoneAbout>
+      <ThemeSwitcher />
     </GridWrapper>
-    <ThemeSwitcher />
   </>
-
 );
 
 export default About;
