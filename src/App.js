@@ -5,11 +5,11 @@ import { lightTheme, darkTheme } from "./themes";
 import { GlobalStyle } from "./GlobalStyles";
 import { Container } from "./styled";
 import { skills, skillsToLearn } from "./skills";
-import About from "./Components/About";
-import Section from "./Components/Common/Section/index";
-import Skillset from "./Components/Common/Skillset";
-import Portfolio from "./Components/Portfolio";
-import Contact from "./Components/Contact";
+import About from "./Features/About";
+import Section from "./Common/Section/";
+import Skillset from "./Common/Skillset";
+import Portfolio from "./Features/Portfolio";
+import Contact from "./Features/Contact";
 
 function App() {
   const isDarkTheme = useSelector(selectDarkTheme);

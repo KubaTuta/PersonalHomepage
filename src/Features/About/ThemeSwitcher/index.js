@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux"
-import { selectDarkTheme, toggleTheme } from "../../../Features/themeSlice";
+import { selectDarkTheme, toggleTheme } from "../../themeSlice";
 import { Button, Mode, Wrapper } from "./styled";
 import { ReactComponent as ToggleOn } from "../../svg/ToggleOn.svg";
 import { ReactComponent as ToggleOff } from "../../svg/ToggleOff.svg";

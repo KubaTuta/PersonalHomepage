@@ -11,10 +11,10 @@ const GitSuccess = ({ repositories }) => {
           {description}
         </Text>
         <Text>
-          DEMO: <Link href={homepage}>{homepage} rel="noopener noreferrer"</Link>
+          DEMO: <Link href={homepage} rel="noopener noreferrer">{homepage} </Link>
         </Text>
         <Text>
-          CODE: <Link href={html_url}>{html_url} rel="noopener noreferrer"</Link>
+          CODE: <Link href={html_url} rel="noopener noreferrer">{html_url}</Link>
         </Text>
       </Tile>
       )

@@ -11,11 +11,11 @@ const Contact = () => {
       <Heading>
         LET'S TALK!
       </Heading>
-      <Email href="mailto:tuta.jakub@gmail.com"  rel="noopener noreferrer">
+      <Email href="mailto:tuta.jakub@gmail.com" rel="noopener noreferrer">
         tuta.jakub@gmail.com
       </Email>
       <Description>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique temporibus expedita voluptatibus distinctio tenetur debitis, itaque, voluptate mollitia libero eligendi placeat natus modi! Consequatur voluptatibus placeat dolor libero architecto quidem?
+        I am currently looking for a job opportunity in IT, so if you have any proposition, I encourage you to contact me
       </Description>
       <>
         <SvgLink href="https://google.pl" rel="noopener noreferrer"><Github /></SvgLink>

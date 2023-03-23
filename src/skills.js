@@ -29,27 +29,31 @@ export const skills = [
   },
   {
     id: 8,
-    skill: "Github"
+    skill: "Redux-toolkit"
   },
   {
     id: 9,
-    skill: "Teamwork - Pull requests, merge"
+    skill: "Github"
   },
   {
     id: 10,
-    skill: "Fetch"
+    skill: "Teamwork - Pull requests, merge"
   },
   {
     id: 11,
-    skill: "Async/Await"
+    skill: "Fetch"
   },
   {
     id: 12,
-    skill: "Axios"
+    skill: "Async/Await"
   },
   {
     id: 13,
-    skill: "Redux-toolkit"
+    skill: "Axios"
+  },
+  {
+    id: 14,
+    skill: "Router"
   },
 ];
 

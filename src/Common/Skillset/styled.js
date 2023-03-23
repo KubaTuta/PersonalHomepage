@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ReactComponent as circle } from "../../svg/circle.svg";
+import { ReactComponent as circle } from "../../Features/svg/circle.svg";
 
 export const ListWrapper = styled.div`
   display: grid;
