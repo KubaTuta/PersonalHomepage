@@ -18,10 +18,10 @@ const Contact = () => {
         I am currently looking for a job opportunity in IT, so if you have any proposition, I encourage you to contact me
       </Description>
       <>
-        <SvgLink href="https://google.pl" rel="noopener noreferrer"><Github /></SvgLink>
-        <SvgLink href="https://google.pl" rel="noopener noreferrer"><Facebook /></SvgLink>
-        <SvgLink href="https://google.pl" rel="noopener noreferrer"><Instagram /></SvgLink>
-        <SvgLink href="https://google.pl" rel="noopener noreferrer"><Linked /></SvgLink>
+        <SvgLink href="https://github.com/KubaTuta" rel="noopener noreferrer"><Github /></SvgLink>
+        <SvgLink href="https://github.com/KubaTuta" rel="noopener noreferrer"><Facebook /></SvgLink>
+        <SvgLink href="https://github.com/KubaTuta" rel="noopener noreferrer"><Instagram /></SvgLink>
+        <SvgLink href="https://www.linkedin.com/in/jakub-tuta-51774b165/" rel="noopener noreferrer"><Linked /></SvgLink>
       </>
     </Footer>
 
