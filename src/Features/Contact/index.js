@@ -1,8 +1,6 @@
 import { Footer } from "./styled";
 import { Description, Email, Heading, SvgLink } from "./styled";
 import { ReactComponent as Github } from "../svg//git.svg";
-import { ReactComponent as Facebook } from "../svg/Facebook.svg";
-import { ReactComponent as Instagram } from "../svg/Instagram.svg";
 import { ReactComponent as Linked } from "../svg/Linked.svg";
 
 const Contact = () => (
@@ -18,8 +16,6 @@ const Contact = () => (
     </Description>
     <>
       <SvgLink href="https://github.com/KubaTuta" rel="noopener noreferrer"><Github /></SvgLink>
-      <SvgLink href="https://github.com/KubaTuta" rel="noopener noreferrer"><Facebook /></SvgLink>
-      <SvgLink href="https://github.com/KubaTuta" rel="noopener noreferrer"><Instagram /></SvgLink>
       <SvgLink href="https://www.linkedin.com/in/jakub-tuta-51774b165/" rel="noopener noreferrer"><Linked /></SvgLink>
     </>
   </Footer>
