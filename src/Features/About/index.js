@@ -10,7 +10,8 @@ const About = () => (
         <Prefix>THIS IS</Prefix>
         <Header>Kuba Tuta</Header>
         <Description>
-          Fascynuje mnie jak to działa,
+          Fascynuje mnie zabawa z kodem, rozwiązywanie problemów i mnogość zagadnień z tym związanych.
+          Czekam i liczę na to, aby zajmować się tym na wyłączność.
         </Description>
         <Link href="mailto:tuta.jakub@gmail.com"><Border><Hire /></Border></Link>
       </ZoneAbout>
