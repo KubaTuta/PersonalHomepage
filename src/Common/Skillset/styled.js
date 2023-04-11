@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ReactComponent as circle } from "../../Features/svg/circle.svg";
+import { ReactComponent as circle } from "../../features/svg/circle.svg";
 
 export const ListWrapper = styled.div`
   display: grid;
@@ -16,26 +16,26 @@ export const StyledUl = styled.ul`
   grid-auto-flow: column;
   grid-template-columns: repeat(3, 1fr);
 
-  & > :nth-child(-n+${({props})=>Math.ceil(Object.keys(props).length / 3)}) {
+  & > :nth-child(-n+${({ props }) => Math.ceil(Object.keys(props).length / 3)}) {
     grid-column: 1;
   };
 
-  & > :nth-child(n+${({props})=>Math.ceil(Object.keys(props).length / 3) + 1}) {
+  & > :nth-child(n+${({ props }) => Math.ceil(Object.keys(props).length / 3) + 1}) {
     grid-column: 2;
   };
 
-  & > :nth-child(n+${({props})=>Object.keys(props).length - (Math.floor(Object.keys(props).length / 3) - 1)}) {
+  & > :nth-child(n+${({ props }) => Object.keys(props).length - (Math.floor(Object.keys(props).length / 3) - 1)}) {
     grid-column: 3;
   };
 
   @media(max-width: ${({ theme }) => theme.breakpoint.medium}) {
     grid-template-columns: repeat(2, 1fr);
 
-    & > :nth-child(-n+${({props})=>Math.ceil(Object.keys(props).length / 2)}) {
+    & > :nth-child(-n+${({ props }) => Math.ceil(Object.keys(props).length / 2)}) {
     grid-column: 1;
     };
     
-    & > :nth-child(n+${({props})=>Object.keys(props).length - (Math.floor(Object.keys(props).length / 3) - 1)}) {
+    & > :nth-child(n+${({ props }) => Object.keys(props).length - (Math.floor(Object.keys(props).length / 3) - 1)}) {
     grid-column: unset;
     };
   };
@@ -45,7 +45,7 @@ export const StyledUl = styled.ul`
     flex-direction: column;
   };
 
-  @media(max-width: ${({theme})=>theme.breakpoint.mobile}) {
+  @media(max-width: ${({ theme }) => theme.breakpoint.mobile}) {
     display: flex;
     flex-direction: column;
   };
@@ -59,7 +59,8 @@ export const StyledLi = styled.li`
   display: flex;
   align-items: center;
   transition: 0.5s;
-  @media(max-width: ${({theme})=>theme.breakpoint.mobile}) {
+
+  @media(max-width: ${({ theme }) => theme.breakpoint.mobile}) {
     font-size: 14px;
   };
 `;
@@ -67,7 +68,8 @@ export const StyledLi = styled.li`
 export const Circle = styled(circle)`
   margin-left: 16px;
   margin-right: 16px;
-  @media(max-width: ${({theme})=>theme.breakpoint.mobile}) {
+  
+  @media(max-width: ${({ theme }) => theme.breakpoint.mobile}) {
     width: 6px;
   };
 `;

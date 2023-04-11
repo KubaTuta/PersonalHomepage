@@ -3,6 +3,13 @@ const { createGlobalStyle } = require("styled-components");
 export const GlobalStyle = createGlobalStyle`
   html {
     box-sizing: border-box;
+  }
+
+  *, ::after, ::before {
+    box-sizing: inherit;
+  }
+
+  body {
     margin: 20px;
     color: ${({theme})=>theme.color.text};
     background-color: ${({theme})=>theme.color.background};
@@ -10,10 +17,6 @@ export const GlobalStyle = createGlobalStyle`
     @media(max-width: ${({theme})=>theme.breakpoint.mobile}) {
       margin: 14px;
     }
-  }
-
-  *, ::after, ::before {
-    box-sizing: inherit;
   }
 
   #root {

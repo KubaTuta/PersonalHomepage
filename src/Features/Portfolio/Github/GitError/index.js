@@ -11,4 +11,5 @@ const GitError = () => (
     <Link href="https://github.com/KubaTuta/" rel="noopener noreferrer"><Button>Go to Github</Button></Link>
   </Wrapper>
 );
+
 export default GitError;

@@ -5,6 +5,7 @@ export const H3 = styled.h3`
   margin-top: 24px;
   margin-bottom: 24px;
   color: ${({theme})=>theme.color.text};
+
   @media(max-width: ${({theme})=>theme.breakpoint.mobile}) {
     font-size: 16px;
   };
@@ -20,6 +21,7 @@ export const Button = styled.button`
   color: ${({theme})=>theme.color.tile};
   background-color: ${({theme})=>theme.color.scienceBlue};
   margin-top: 32px;
+  
   &:hover {
     cursor: pointer;
     outline: 4px solid ${({theme})=>theme.color.border};

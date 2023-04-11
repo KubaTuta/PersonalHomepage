@@ -10,8 +10,8 @@ const repoSlice = createSlice({
     fetchRepositories: () => ({
       repositories: null,
       status: "loading",
-}),
-    fetchRepositoriesSuccess: (_, {payload: repositories}) => ({
+    }),
+    fetchRepositoriesSuccess: (_, { payload: repositories }) => ({
       repositories,
       status: "success",
     }),

@@ -19,10 +19,12 @@ export const Email = styled.a`
   font-weight: 900;
   transition: 0.3s;
   width: fit-content;
+
   &:hover {
     color: ${({ theme }) => theme.color.scienceBlue};
     cursor: pointer;
   }
+
   @media(max-width: ${({ theme }) => theme.breakpoint.mobile}) {
     font-size: 18px;
     }
@@ -31,9 +33,10 @@ export const Email = styled.a`
 export const Description = styled.p`
   font-size: 18px;
   max-width: 670px;
+
   @media(max-width: ${({ theme }) => theme.breakpoint.mobile}) {
     font-size: 14px;
-    }
+  }
 `;
 
 export const SvgLink = styled.a`
@@ -42,6 +45,7 @@ export const SvgLink = styled.a`
     fill: ${({ theme }) => theme.color.icon};
     transition: 0.3s;
   }
+  
   &:hover {
     path {
       fill: ${({ theme }) => theme.color.iconHover};
@@ -49,7 +53,7 @@ export const SvgLink = styled.a`
   }
   @media(max-width: ${({ theme }) => theme.breakpoint.mobile}) {
     svg {
-      width: 32px;
+      width: 35px;
     }
   }
 `;

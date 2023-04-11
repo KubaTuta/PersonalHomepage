@@ -37,7 +37,7 @@ export const skills = [
   },
   {
     id: 10,
-    skill: "Teamwork - Pull requests, merge"
+    skill: "Teamwork"
   },
   {
     id: 11,
@@ -53,7 +53,7 @@ export const skills = [
   },
   {
     id: 14,
-    skill: "Router"
+    skill: "React Router"
   },
 ];
 

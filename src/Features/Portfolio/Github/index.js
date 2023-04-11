@@ -1,11 +1,10 @@
 
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchRepositories, selectRepos, selectReposStatus } from "../../../Features/repoSlice";
+import { fetchRepositories, selectRepos, selectReposStatus } from "../../../features/repoSlice";
 import GitError from "./GitError";
 import GitLoading from "./GitLoading";
 import GitSucceess from "./GitSuccess";
-
 
 const Github = () => {
   const dispatch = useDispatch();
@@ -15,21 +14,18 @@ const Github = () => {
 
   useEffect(() => { dispatch(fetchRepositories()) }, [dispatch]);
 
- switch (repoStatus) {
-  case "initial":
-    return null;
-  case "loading":
-    return <GitLoading />
-  case "error":
-    return <GitError />;
-  case "success":
-    return (
-    <GitSucceess repositories={repositories}/>
-    )
-    
+  switch (repoStatus) {
+    case "loading":
+      return <GitLoading />
+    case "error":
+      return <GitError />;
+    case "success":
+      return (
+        <GitSucceess repositories={repositories} />
+      )
     default:
       return null
- }
+  }
 };
 
 export default Github;

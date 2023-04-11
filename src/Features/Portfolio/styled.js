@@ -7,6 +7,7 @@ export const Heading = styled.div`
   align-items: center;
   margin-top: 72px;
   margin-bottom: 24px;
+
   @media(max-width: ${({theme})=>theme.breakpoint.mobile}) {
     margin-top: 50px;
     }
@@ -19,6 +20,7 @@ export const GitSvg = styled(github)`
 
 export const H2 = styled.h2`
   margin: 0;
+
   @media(max-width: ${({theme})=>theme.breakpoint.mobile}) {
     font-size: 18px;
   }
@@ -28,6 +30,7 @@ export const Description = styled.p`
   font-size: 20px;
   margin: 8px;
   text-align: center;
+  
   @media(max-width: ${({theme})=>theme.breakpoint.mobile}) {
     font-size: 17px;
   }

@@ -7,4 +7,5 @@ const GitLoading = () => (
     <Spinner />
   </Wrapper>
 );
+
 export default GitLoading;
