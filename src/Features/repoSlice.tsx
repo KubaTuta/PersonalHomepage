@@ -1,4 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { Rootstate } from "./store";
 
 const repoSlice = createSlice({
   name: "repositories",
@@ -28,10 +29,10 @@ export const {
   fetchRepositoriesSuccess
 } = repoSlice.actions;
 
-const selectReposState = state => state.repositories;
+const selectReposState = (state: Rootstate) => state.repositories;
 
-export const selectRepos = state => selectReposState(state).repositories;
-export const selectReposStatus = state => selectReposState(state).status;
+export const selectRepos = (state: Rootstate) => selectReposState(state).repositories;
+export const selectReposStatus = (state: Rootstate) => selectReposState(state).status;
 
 export default repoSlice.reducer;
 
