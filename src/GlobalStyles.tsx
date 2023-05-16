@@ -1,6 +1,20 @@
-const { createGlobalStyle } = require("styled-components");
+import { createGlobalStyle } from "styled-components";
 
-export const GlobalStyle = createGlobalStyle`
+interface IGlobalStyleProps {
+  theme: Theme;
+}
+
+interface Theme {
+  color: {
+    text: string;
+    background: string;
+  };
+  breakpoint: {
+    mobile: string;
+  };
+}
+
+export const GlobalStyle = createGlobalStyle<IGlobalStyleProps>`
   html {
     box-sizing: border-box;
   }
