@@ -1,12 +1,21 @@
 import styled from "styled-components";
 import { ReactComponent as circle } from "../../features/svg/circle.svg";
 
+interface Prop {
+  id: Number;
+  skill: String;
+}
+
+interface StyledProps {
+  props: Prop[];
+}
+
 export const ListWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 `;
 
-export const StyledUl = styled.ul`
+export const StyledUl = styled.ul<StyledProps>`
   padding: 0;
   margin-top: 0;
   margin-left: -16px;

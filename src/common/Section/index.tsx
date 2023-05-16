@@ -1,6 +1,11 @@
 import { StyledHeader, Wrapper } from "./styled";
 
-const Section = ({header, body}) => (
+interface SectionProps {
+  header: string;
+  body: JSX.Element
+}
+
+const Section = ({header, body}: SectionProps) => (
   <Wrapper>
     <StyledHeader>{header}</StyledHeader>
     {body}
