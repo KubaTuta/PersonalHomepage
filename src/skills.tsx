@@ -55,24 +55,24 @@ export const skills = [
     id: 14,
     skill: "React Router"
   },
+  {
+    id: 15,
+    skill: "TypeScript"
+  }
 ];
 
 export const skillsToLearn = [
   {
     id: 1,
-    skill: "Typescript"
+    skill: "TanStack Query "
   },
   {
     id: 2,
-    skill: "Python"
+    skill: "JSON Server"
   },
   {
     id: 3,
     skill: "React Native"
-  },
-  {
-    id: 4,
-    skill: "SQL"
   },
   {
     id: 5,

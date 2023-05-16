@@ -1,6 +1,6 @@
 import { Link, Description, GridWrapper, Header, Image, Prefix, ZoneAbout, Border } from "./styled";
 import face from "./face.jpg";
-import { ThemeSwitcher } from "../../features/About/ThemeSwitcher";
+import { ThemeSwitcher } from "./ThemeSwitcher";
 import { ReactComponent as Hire } from "./hire.svg";
 
 const About = () => (
