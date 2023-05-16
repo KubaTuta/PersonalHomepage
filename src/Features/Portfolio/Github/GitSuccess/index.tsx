@@ -1,10 +1,21 @@
 import { Text, Tile, Link, GridWrapper, H3 } from "./styled";
 
-const GitSuccess = ({ repositories }) => (
+interface Repository {
+  name: string;
+  description: string;
+  html_url: string;
+  homepage: string;
+}
+
+interface Repositories {
+  repositories: Repository[];
+}
+
+const GitSuccess = ({ repositories }: Repositories) => (
   <GridWrapper>
     {
       repositories.map(({ name, description, html_url, homepage }, index) =>
-        <Tile key={index}>
+      <Tile key={index}>
           <H3>{name}</H3>
           <Text>
             {description}
