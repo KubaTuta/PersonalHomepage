@@ -6,19 +6,6 @@ import GitError from "./GitError";
 import GitLoading from "./GitLoading";
 import GitSucceess from "./GitSuccess";
 
-interface Repository {
-  name: string;
-  description: string;
-  html_url: string;
-  homepage: string;
-}
-
-interface Repositories {
-  repositories: Repository[];
-}
-
-
-
 const Github = () => {
   const dispatch = useDispatch();
 
