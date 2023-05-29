@@ -1,13 +1,11 @@
 import styled from "styled-components";
 import { ReactComponent as circle } from "../../features/svg/circle.svg";
 
-interface Prop {
-  id: Number;
-  skill: String;
-}
-
-interface StyledProps {
-  props: Prop[];
+type Props = {
+  firstColumn: number;
+  secondColumn: number;
+  lastColumn: number;
+  firstOfTwo: number;
 }
 
 export const ListWrapper = styled.div`
@@ -15,7 +13,7 @@ export const ListWrapper = styled.div`
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 `;
 
-export const StyledUl = styled.ul<StyledProps>`
+export const StyledUl = styled.ul<Props>`
   padding: 0;
   margin-top: 0;
   margin-left: -16px;
@@ -25,26 +23,26 @@ export const StyledUl = styled.ul<StyledProps>`
   grid-auto-flow: column;
   grid-template-columns: repeat(3, 1fr);
 
-  & > :nth-child(-n+${({ props }) => Math.ceil(Object.keys(props).length / 3)}) {
+  & > :nth-child(-n+${({ firstColumn }) => firstColumn}) {
     grid-column: 1;
   };
 
-  & > :nth-child(n+${({ props }) => Math.ceil(Object.keys(props).length / 3) + 1}) {
+  & > :nth-child(n+${({ secondColumn }) => secondColumn}) {
     grid-column: 2;
   };
 
-  & > :nth-child(n+${({ props }) => Object.keys(props).length - (Math.floor(Object.keys(props).length / 3) - 1)}) {
+  & > :nth-child(n+${({ lastColumn }) => lastColumn}) {
     grid-column: 3;
   };
 
   @media(max-width: ${({ theme }) => theme.breakpoint.medium}) {
     grid-template-columns: repeat(2, 1fr);
 
-    & > :nth-child(-n+${({ props }) => Math.ceil(Object.keys(props).length / 2)}) {
+    & > :nth-child(-n+${({ firstOfTwo }) => firstOfTwo}) {
     grid-column: 1;
     };
     
-    & > :nth-child(n+${({ props }) => Object.keys(props).length - (Math.floor(Object.keys(props).length / 3) - 1)}) {
+    & > :nth-child(n+${({ lastColumn }) => lastColumn}) {
     grid-column: unset;
     };
   };

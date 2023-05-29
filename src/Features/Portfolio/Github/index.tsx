@@ -1,43 +1,18 @@
-
-import { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { fetchRepositories, selectRepos, selectReposStatus } from "../../repoSlice";
+import { useQuery } from "@tanstack/react-query";
+import { getRepo } from "../../api";
 import GitError from "./GitError";
 import GitLoading from "./GitLoading";
-import GitSucceess from "./GitSuccess";
-
-interface Repository {
-  name: string;
-  description: string;
-  html_url: string;
-  homepage: string;
-}
-
-interface Repositories {
-  repositories: Repository[];
-}
-
-
+import GitSuccess from "./GitSuccess";
 
 const Github = () => {
-  const dispatch = useDispatch();
+  const { isLoading, data } = useQuery(["repositories"], getRepo);
 
-  const repositories = useSelector(selectRepos) ?? [];
-  const repoStatus = useSelector(selectReposStatus);
-
-  useEffect(() => { dispatch(fetchRepositories()) }, [dispatch]);
-
-  switch (repoStatus) {
-    case "loading":
-      return <GitLoading />
-    case "error":
-      return <GitError />;
-    case "success":
-      return (
-        <GitSucceess repositories={repositories} />
-      )
-    default:
-      return null
+  if (data) {
+    return <GitSuccess repositories={data} />;
+  } else if (isLoading) {
+    return <GitLoading />;
+  } else {
+    return <GitError />;
   }
 };
 

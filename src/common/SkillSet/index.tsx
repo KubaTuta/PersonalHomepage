@@ -1,3 +1,4 @@
+import { useCalculateColums } from "../customHooks";
 import { ListWrapper, StyledUl, StyledLi, Circle } from "./styled";
 
 interface Prop {
@@ -10,16 +11,25 @@ interface Props {
 }
 
 const Skillset = ({ props }: Props) => {
+  const { firstColumn, secondColumn, lastColumn, firstOfTwo } =
+    useCalculateColums(props);
+
   return (
-  <ListWrapper>
-    <StyledUl props={props}>
-      {props.map(({ skill, id }) => (
-        <StyledLi key={id.toString()}>
-          <Circle /> {skill}
-        </StyledLi>
-      ))}
-    </StyledUl>
-  </ListWrapper>
-);}
+    <ListWrapper>
+      <StyledUl
+        firstColumn={firstColumn}
+        secondColumn={secondColumn}
+        lastColumn={lastColumn}
+        firstOfTwo={firstOfTwo}
+      >
+        {props.map(({ skill, id }) => (
+          <StyledLi key={id.toString()}>
+            <Circle /> {skill}
+          </StyledLi>
+        ))}
+      </StyledUl>
+    </ListWrapper>
+  );
+};
 
 export default Skillset;
