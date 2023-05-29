@@ -1,4 +1,4 @@
-import { useCalculateColums } from "../useHooks";
+import { useCalculateColums } from "../customHooks";
 import { ListWrapper, StyledUl, StyledLi, Circle } from "./styled";
 
 interface Prop {
