@@ -41,7 +41,7 @@ export const skills = [
   },
   {
     id: 11,
-    skill: "Fetch"
+    skill: "Fetch, Axios"
   },
   {
     id: 12,
@@ -49,37 +49,34 @@ export const skills = [
   },
   {
     id: 13,
-    skill: "Axios"
-  },
-  {
-    id: 14,
     skill: "React Router"
   },
   {
-    id: 15,
+    id: 14,
     skill: "TypeScript"
+  },
+  {
+    id: 15,
+    skill: "TanStack Query "
   }
 ];
 
 export const skillsToLearn = [
   {
     id: 1,
-    skill: "TanStack Query "
-  },
-  {
-    id: 2,
     skill: "JSON Server"
   },
   {
-    id: 3,
+    id: 2,
     skill: "React Native"
   },
   {
-    id: 5,
+    id: 3,
     skill: "Material-UI"
   },
   {
-    id: 6,
+    id: 4,
     skill: "More and more..."
   },
+  
 ];
