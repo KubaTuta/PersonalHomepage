@@ -1,7 +1,7 @@
 export const lightTheme = {
   color: {
-    tile: "white",
-    text: "black",
+    tile: "#ffffff",
+    text: "#000000",
     background: "#FBFBFE ",
     smallText: "#6E7E91",
     scienceBlue: "#0366D6",
