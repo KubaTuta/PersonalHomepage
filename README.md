@@ -14,7 +14,8 @@ This is my portfolio website. Here you can find my projects, skills and contact 
 - JSX
 - Styled Components
 - Redux
-- Redux-Saga
+- Redux-Saga (no longer in use)
+- Tanstack Query
 - Axios
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
