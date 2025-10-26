@@ -1,82 +1,121 @@
 export const skills = [
   {
     id: 1,
-    skill: "HTML"
+    skill: "Java core",
   },
   {
     id: 2,
-    skill: "CSS"
+    skill: "JavaFX",
   },
   {
     id: 3,
-    skill: "JavaScript"
+    skill: "MVCI architecture",
   },
   {
     id: 4,
-    skill: "React"
+    skill: "Data Binding",
   },
   {
     id: 5,
-    skill: "Styled Components"
+    skill: "Collections & Streams basics",
   },
   {
     id: 6,
-    skill: "Redux"
+    skill: "Error handling",
   },
   {
     id: 7,
-    skill: "Redux-saga"
+    skill: "HTML",
   },
   {
     id: 8,
-    skill: "Redux-toolkit"
+    skill: "CSS",
   },
   {
     id: 9,
-    skill: "Github"
+    skill: "JavaScript",
   },
   {
     id: 10,
-    skill: "Teamwork"
+    skill: "React",
   },
   {
     id: 11,
-    skill: "Fetch, Axios"
+    skill: "Styled Components",
   },
   {
     id: 12,
-    skill: "Async/Await"
+    skill: "Redux",
   },
   {
     id: 13,
-    skill: "React Router"
+    skill: "Redux-saga",
   },
   {
     id: 14,
-    skill: "TypeScript"
+    skill: "Redux-toolkit",
   },
   {
     id: 15,
-    skill: "TanStack Query "
-  }
+    skill: "Github",
+  },
+  {
+    id: 16,
+    skill: "Teamwork",
+  },
+  {
+    id: 17,
+    skill: "Fetch, Axios",
+  },
+  {
+    id: 18,
+    skill: "Async/Await",
+  },
+  {
+    id: 19,
+    skill: "React Router",
+  },
+  {
+    id: 20,
+    skill: "TypeScript",
+  },
+  {
+    id: 21,
+    skill: "TanStack Query ",
+  },
 ];
 
 export const skillsToLearn = [
   {
     id: 1,
-    skill: "JSON Server"
+    skill: "Multithreading & Concurrency",
   },
   {
     id: 2,
-    skill: "React Native"
+    skill: "Java Streams & Functional Programming",
   },
   {
     id: 3,
-    skill: "Material-UI"
+    skill: "Unit Testing (JUnit 5 + Mockito)",
   },
   {
     id: 4,
-    skill: "More and more..."
+    skill: "Logging (SLF4J / Logback)",
   },
-  
+  {
+    id: 5,
+    skill: "Build Tools (Maven / Gradle)",
+  },
+  {
+    id: 6,
+    skill: "JavaFX Advanced / UI Architecture",
+  },
+  {
+    id: 7,
+    skill: "Databases & JDBC (SQLite / MySQL)",
+  },
+  {
+    id: 8,
+    skill: "More and more...",
+  },
 ];
