@@ -4,7 +4,7 @@ import { Rootstate } from "./store";
 const themeSlice = createSlice({
   name: "theme",
   initialState: {
-    darkTheme: false,
+    darkTheme: true,
   },
   reducers: {
     toggleTheme: state => {
