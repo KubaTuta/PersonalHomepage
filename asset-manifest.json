@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.js": "/PersonalHomepage/static/js/main.79b5f41d.js",
-    "static/media/faceWhite.jpg": "/PersonalHomepage/static/media/faceWhite.ff972c1f307cc8190034.jpg",
+    "main.js": "/PersonalHomepage/static/js/main.9bdbbf8d.js",
     "static/media/faceBlack.jpg": "/PersonalHomepage/static/media/faceBlack.353f9983410b00639ff6.jpg",
+    "static/media/faceWhite.jpg": "/PersonalHomepage/static/media/faceWhite.5bd59e9c2056ddf7cef9.jpg",
     "static/media/ToggleOn.svg": "/PersonalHomepage/static/media/ToggleOn.27dac68ffb0717496c5b9a034e3c01e8.svg",
     "static/media/ToggleOff.svg": "/PersonalHomepage/static/media/ToggleOff.2a2486b19c447f646975c169680bb1e1.svg",
     "static/media/github.svg": "/PersonalHomepage/static/media/github.849159834687c24c99538cd61b56b113.svg",
@@ -13,9 +13,9 @@
     "static/media/wrong.svg": "/PersonalHomepage/static/media/wrong.1d5161794562659fe8646d83e342022b.svg",
     "static/media/spinner.svg": "/PersonalHomepage/static/media/spinner.f0cf9f6aef365567ad9b9a0d34b8b760.svg",
     "static/media/circle.svg": "/PersonalHomepage/static/media/circle.ed92e3d34ca00a2f7b5d80c0e1bf0757.svg",
-    "main.79b5f41d.js.map": "/PersonalHomepage/static/js/main.79b5f41d.js.map"
+    "main.9bdbbf8d.js.map": "/PersonalHomepage/static/js/main.9bdbbf8d.js.map"
   },
   "entrypoints": [
-    "static/js/main.79b5f41d.js"
+    "static/js/main.9bdbbf8d.js"
   ]
 }
